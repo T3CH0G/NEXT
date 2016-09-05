@@ -18,8 +18,17 @@ def deaf_aunty
 		if ans == comp 
 		puts "NO, WE CAN'T DO THAT!"
 		elsif ans == "I love ya, aunty, but I've got to go." 
-		puts "bye"
-		break
+			counter = 0
+			space = gets.chomp
+			if space == "\n"
+				counter += 1
+				if counter == 2	
+				puts "bye"
+				break
+				end
+			break
+			end
+			break
 		else 
 		puts "HUH?! SPEAK UP,SANDRA!"
 		end
@@ -27,7 +36,6 @@ def deaf_aunty
 end
 
 
+
 # Run our method
 deaf_aunty
-
-
